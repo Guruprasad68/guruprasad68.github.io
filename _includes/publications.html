@@ -1,0 +1,53 @@
+{% if site.data.publications.conference %}
+  <h3 class="pub-group">Conference</h3>
+  <ol class="pub-list">
+    {% for p in site.data.publications.conference %}
+      <li class="pub-item">
+        <p class="pub-title">{{ p.title }}{% if p.note %} <span class="pub-note">({{ p.note }})</span>{% endif %}</p>
+        <p class="pub-authors">{{ p.authors | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+        <p class="pub-venue">{{ p.venue }}</p>
+        {% if p.links %}
+          <p class="pub-links">
+            {% for l in p.links %}<a href="{{ l.url }}">{{ l.name }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}
+          </p>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ol>
+{% endif %}
+
+{% if site.data.publications.workshop %}
+  <h3 class="pub-group">Workshop</h3>
+  <ol class="pub-list">
+    {% for p in site.data.publications.workshop %}
+      <li class="pub-item">
+        <p class="pub-title">{{ p.title }}{% if p.note %} <span class="pub-note">({{ p.note }})</span>{% endif %}</p>
+        <p class="pub-authors">{{ p.authors | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+        <p class="pub-venue">{{ p.venue }}</p>
+        {% if p.links %}
+          <p class="pub-links">
+            {% for l in p.links %}<a href="{{ l.url }}">{{ l.name }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}
+          </p>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ol>
+{% endif %}
+
+{% if site.data.publications.preprint %}
+  <h3 class="pub-group">Preprints</h3>
+  <ol class="pub-list">
+    {% for p in site.data.publications.preprint %}
+      <li class="pub-item">
+        <p class="pub-title">{{ p.title }}{% if p.note %} <span class="pub-note">({{ p.note }})</span>{% endif %}</p>
+        <p class="pub-authors">{{ p.authors | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+        <p class="pub-venue">{{ p.venue }}</p>
+        {% if p.links %}
+          <p class="pub-links">
+            {% for l in p.links %}<a href="{{ l.url }}">{{ l.name }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}
+          </p>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ol>
+{% endif %}

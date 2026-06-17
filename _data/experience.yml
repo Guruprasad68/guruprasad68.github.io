@@ -1,0 +1,19 @@
+# Brief work experience. Keep entries short — one line each.
+# Fields: dates, role, org, org_url (optional), advisor (optional), brief (Markdown allowed).
+- dates: Jun - Aug 2025
+  role: Research Intern
+  org: Otter AI
+  advisor: "Mentor: Kritika Singh"
+  brief: "Contextual deep biasing for ASR — balancing WER on technical vocabulary and general vocabulary."
+
+- dates: Jun – Dec 2022
+  role: Applied Scientist Intern
+  org: Amazon Alexa Speech
+  advisor: "Mentor: Dr. Gopinath Chennupati"
+  brief: "Representation learning using federated learning for automatic speech recognition with Alexa Speech."
+
+- dates: Aug 2020 – Jul 2021
+  role: ML Project Assistant
+  org: IIT Madras Speech Lab
+  advisor: "Advisor: Prof. Umesh Srinivasan"
+  brief: "Low-resource multilingual ASR systems for Indian languages."

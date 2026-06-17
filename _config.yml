@@ -1,0 +1,43 @@
+title: Guruprasad Viswanathan Ramesh
+description: PhD Student, ECE — University of Wisconsin–Madison
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+show_downloads: false
+
+profile:
+  photo: /assets/img/profile_protected.png
+  role: PhD Student, Electrical and Computer Engineering
+  affiliation: University of Wisconsin–Madison
+  cv: /assets/cv/guruprasad_cv.pdf
+  cv_updated: June 2026
+  email: viswanathanr@wisc.edu
+
+# Replace the # placeholders with your real URLs.
+links:
+  - name: Email
+    url: mailto:viswanathanr@wisc.edu
+  - name: GitHub
+    url: "https://github.com/Guruprasad68"
+  - name: Google Scholar
+    url: "https://scholar.google.com/citations?user=LGSKrEQAAAAJ&hl=en"
+  - name: LinkedIn
+    url: "https://www.linkedin.com/in/guruprasad-viswanathan-ramesh-0a5577199/"
+  - name: X
+    url: "https://x.com/gpvishramesh"
+
+footer_note: "Website vibe coded with Opus 4.8 using the minimal theme"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - guruprasad_resume.pdf
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

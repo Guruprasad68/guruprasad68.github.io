@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <script>
+      // Apply stored theme before paint to avoid flash.
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (t === 'light' || t === 'dark') {
+            document.documentElement.setAttribute('data-theme', t);
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        {% if site.profile.photo %}
+          <img class="profile-photo" src="{{ site.profile.photo | relative_url }}" alt="{{ site.title }}" draggable="false" oncontextmenu="return false;">
+        {% endif %}
+
+        <h1>{{ site.title }}</h1>
+        {% if site.profile.role %}<p class="role">{{ site.profile.role }}</p>{% endif %}
+        {% if site.profile.affiliation %}<p class="affiliation">{{ site.profile.affiliation }}</p>{% endif %}
+
+        {% if site.links %}
+          <ul class="links">
+            {% for link in site.links %}
+              <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        {% if site.profile.cv %}
+          <p class="cv-link"><a href="{{ site.profile.cv | relative_url }}">Download CV (PDF)</a></p>
+          {% if site.profile.cv_updated %}<p class="cv-updated">Last updated CV in {{ site.profile.cv_updated }}</p>{% endif %}
+        {% endif %}
+      </header>
+
+      <section>
+        <nav class="section-tabs" aria-label="Page sections">
+          <a href="#about">About</a>
+          <a href="#news">News</a>
+          <a href="#experience">Experience</a>
+          <a href="#publications">Publications</a>
+          <div class="theme-toggle" role="group" aria-label="Color theme">
+            <button type="button" data-theme="light" aria-pressed="false" aria-label="Light theme" title="Light">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+              </svg>
+            </button>
+            <button type="button" data-theme="auto" aria-pressed="true" aria-label="Automatic theme" title="Auto">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="9"></circle>
+                <path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor" stroke="none"></path>
+              </svg>
+            </button>
+            <button type="button" data-theme="dark" aria-pressed="false" aria-label="Dark theme" title="Dark">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </button>
+          </div>
+        </nav>
+        {{ content }}
+      </section>
+
+      <footer>
+        <p class="vibe">{{ site.footer_note }}</p>
+        <p class="credit">Inspired by former labmate <a href="https://ashishhoodaiitd.github.io/">Ashish's website</a>.</p>
+        <p class="copyright">&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+  </body>
+</html>

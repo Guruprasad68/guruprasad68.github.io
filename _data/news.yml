@@ -1,0 +1,41 @@
+# News entries — newest first. The list scrolls when it overflows.
+# Only events from the PhD onward (Jan 2024+).
+# Fields: date (free-form string), text (Markdown allowed).
+- date: May 2026
+  text: "🎉🎉 **WebSP-Eval** accepted at PETS 2026."
+
+- date: Apr 2026
+  text: "🎤 Gave a talk at Google Research on *Evaluating Web Agents on Website Security and Privacy Tasks*."
+
+- date: Apr 2026
+  text: "🎉🎉 **CounterFace** accepted at ACM FAccT 2026."
+
+- date: Aug 2025
+  text: "💼 Wrapped up summer research internship at Otter AI."
+
+- date: Jun 2025
+  text: "💼 Started a research internship at Otter AI on contextual deep biasing for ASR."
+
+- date: Oct 2024
+  text: "🎤 Gave a talk at the UW–Madison Computer Engineering Seminar on *Using LLMs in Research*."
+
+- date: Jan 2024
+  text: "🎉🎉 **Limitations of Face Image Generation** accepted at AAAI 2024."
+
+- date: Jan 2024
+  text: "🎓 Started my PhD in Electrical and Computer Engineering at UW–Madison."
+
+- date: Dec 2023
+  text: "🎓 Completed my Master's in Electrical and Computer Engineering at UW–Madison."
+
+- date: Apr 2023
+  text: "🎉🎉 **Federated Representation Learning for ASR** accepted at ISCA SPSC Symposium at Interspeech 2023."
+
+- date: Dec 2022
+  text: "💼 Wrapped up Internship at Amazon Alex AI."
+
+- date: Jun 2022
+  text: "💼 Started an internship at Amazon Alex AI, working on federated learning for ASR."
+
+- date: Sep 2021
+  text: "🎓 Joined UW-Madison as a Master's student in Electrical and Computer Engineering."

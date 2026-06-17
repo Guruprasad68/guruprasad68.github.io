@@ -1,0 +1,16 @@
+<ul class="exp-list">
+  {% for e in site.data.experience %}
+    <li class="exp-item">
+      <span class="exp-date-col"><span class="exp-date">{{ e.dates }}</span></span>
+      <div class="exp-body">
+        <p class="exp-head">
+          <span class="exp-role">{{ e.role }}</span>
+          <span class="exp-sep">·</span>
+          {% if e.org_url and e.org_url != "#" %}<a class="exp-org" href="{{ e.org_url }}">{{ e.org }}</a>{% else %}<span class="exp-org">{{ e.org }}</span>{% endif %}
+        </p>
+        {% if e.advisor %}<p class="exp-advisor">{{ e.advisor }}</p>{% endif %}
+        <p class="exp-brief">{{ e.brief | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+      </div>
+    </li>
+  {% endfor %}
+</ul>

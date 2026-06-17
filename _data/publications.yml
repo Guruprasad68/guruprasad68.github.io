@@ -1,0 +1,54 @@
+# Publications, workshop papers, and preprints. Markdown allowed in text fields; ** wraps your own name.
+conference:
+  - year: 2026
+    title: "WebSP-Eval: Evaluating Web Agents on Website Security and Privacy Tasks"
+    authors: "**Guruprasad V. Ramesh**, Asmit Nayak, Basieem Siddique, and Kassem Fawaz"
+    venue: "Proceedings on Privacy Enhancing Technologies (PETS), 2026"
+    links:
+      - name: Code
+        url: "https://github.com/wi-pi/webspeval_code"
+      - name: Paper
+        url: "https://arxiv.org/pdf/2604.06367"
+      - name: Project Page 
+        url: "https://wiscprivacy.com/webspeval/"
+
+
+  - year: 2026
+    title: "CounterFace: A Synthetic Face Dataset for Fine-Grained Counterfactual Evaluation of Face Recognition Systems"
+    authors: "**Guruprasad V. Ramesh**, Harrison Rosenberg, Ashish Hooda, Shimaa Ahmed, Ramya Korlakai Vinayak, and Kassem Fawaz"
+    venue: "Proceedings of ACM Fairness, Accountability, and Transparency (FAccT), 2026"
+    links:
+      - name: Code
+        url: "https://github.com/Guruprasad68/counterface_facct2026"
+      - name: Paper
+        url: "https://arxiv.org/pdf/2407.13922" 
+
+
+  - year: 2024
+    title: "Limitations of Face Image Generation"
+    note: "Co-first author"
+    authors: "Harrison Rosenberg\\*, Shimaa Ahmed\\*, **Guruprasad V. Ramesh**\\*, Kassem Fawaz, and Ramya Korlakai Vinayak"
+    venue: "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI), 2024"
+    links:
+      - name: Code
+        url: "https://github.com/wi-pi/Limitations_of_Face_Generation"
+      - name: Paper
+        url: "https://ojs.aaai.org/index.php/AAAI/article/view/29403"
+      - name: Long Report
+        url: "https://arxiv.org/pdf/2309.07277"
+
+workshop:
+  - year: 2026
+    title: "Analyzing gem5 Commit-Code Inconsistency with LLMs"
+    authors: "Elise Song, Aaryan Patel, **Guruprasad V. Ramesh**, Jack West, Lance Hartung, Ethan Cecchetti, Kassem Fawaz, Joshua San Miguel, and Matthew D. Sinclair"
+    venue: "gem5 Workshop at International Symposium on Computer Architecture (ISCA), 2026"
+
+  - year: 2023
+    title: "Federated Representation Learning for Automatic Speech Recognition"
+    authors: "**Guruprasad V. Ramesh**, Gopinath Chennupati, Milind Rao, Anit Kumar Sahu, Ariya Rastrow, and Jasha Droppo"
+    venue: "ISCA SPSC Symposium at Interspeech, 2023"
+    links:
+      - name: Paper
+        url: "https://arxiv.org/pdf/2308.02013"
+
+# preprint: []   # Add preprints here when you have new ones.
